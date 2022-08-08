@@ -791,6 +791,8 @@ save_grub_cfg='cat'
 GRUB_DEFAULT=debi
 GRUB_TIMEOUT=$grub_timeout
 GRUB_TIMEOUT_STYLE=menu
+GRUB_CMDLINE_LINUX_DEFAULT="ipv6.disable=1"
+GRUB_CMDLINE_LINUX="ipv6.disable=1"
 EOF
 
     if command_exists update-grub; then
